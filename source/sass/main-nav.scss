@@ -1,0 +1,21 @@
+.main-nav {
+  font-family: $font-special-medium, $font-standart;
+  font-size: 20px;
+  font-weight: 500px;
+  text-transform: $up-transform;
+  color: $basic-black;
+  background-color: $basic;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  border-bottom: $nav-border;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: $basic-black;
+    line-height: 20px;
+    border-bottom: $nav-border;
+  }
+}

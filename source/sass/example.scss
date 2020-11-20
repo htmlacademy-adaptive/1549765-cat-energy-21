@@ -1,0 +1,57 @@
+.example {
+  background-color: $background-gray-2;
+}
+
+.example__wrapper {
+  padding: 26px 21px;
+}
+
+.example__title {
+  font-family: $font-special;
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: $standart-weight;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.example__description {
+  font-family: $font-standart;
+  font-style: normal;
+  font-weight: $standart-weight;
+  font-size: $standart-size;
+  color: $special_dark-grey;
+  line-height: 18px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.example__list {
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.example__number {
+  font-family: $font-special;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.example__text {
+  font-family: $font-standart;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special_dark-grey;
+}
+
+.example__cost {
+  font-family: $font-special;
+  font-style: normal;
+  font-size: $standart-size;
+  text-transform: $up-transform;
+  margin: 0;
+  padding-bottom: 42px;
+}

@@ -1,0 +1,47 @@
+.promo {
+  font-family: $font-special;
+  color: $basic;
+  background-image: url("../img/cat-background.png");
+  background-repeat: no-repeat;
+}
+
+.promo__style {
+  background-image: url("../img/Rectangle\ 18.png");
+  background-repeat: no-repeat;
+}
+
+.promo__wrapper {
+  padding: 27px 20px;
+}
+
+.promo__title {
+  font-family: $font-special;
+  font-size: 36px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: $standart-weight;
+  margin: 7px auto;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  font-family: $font-special;
+  font-size: $standart-size;
+  line-height: 14px;
+  text-transform: $up-transform;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 40px;
+  margin-bottom: 29px;
+}
+
+.promo__to-programs {
+  background-color: $basic-green;
+  font-size: $standart-size;
+  line-height: 18px;
+  text-transform: $up-transform;
+  font-weight: $standart-weight;
+  color: $basic;
+  text-decoration: none;
+  padding: 8px 44px;
+}
