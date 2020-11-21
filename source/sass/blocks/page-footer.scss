@@ -4,6 +4,14 @@
 
 .page-footer__logo {
   padding: 0 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__logo-img {

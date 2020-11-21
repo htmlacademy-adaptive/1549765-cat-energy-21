@@ -7,19 +7,16 @@
 }
 
 .example__title {
-  font-family: $font-special;
+  font-family: $font-family;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
-  font-style: normal;
-  font-weight: $standart-weight;
   margin: 0;
   padding-bottom: 25px;
 }
 
 .example__description {
   font-family: $font-standart;
-  font-style: normal;
-  font-weight: $standart-weight;
   font-size: $standart-size;
   color: $special_dark-grey;
   line-height: 18px;
@@ -33,11 +30,10 @@
 }
 
 .example__number {
-  font-family: $font-special;
+  font-family: $font-family;
   font-size: 24px;
   line-height: 24px;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
 }
 
 .example__text {
@@ -48,10 +44,9 @@
 }
 
 .example__cost {
-  font-family: $font-special;
-  font-style: normal;
+  font-family: $font-family;
   font-size: $standart-size;
-  text-transform: $up-transform;
+  text-transform: uppercase;
   margin: 0;
   padding-bottom: 42px;
 }

@@ -1,12 +1,12 @@
 .promo {
-  font-family: $font-special;
+  font-family: $font-family;
   color: $basic;
   background-image: url("../img/cat-background.png");
   background-repeat: no-repeat;
 }
 
 .promo__style {
-  background-image: url("../img/Rectangle\ 18.png");
+  background-image: url("../img/green-back.png");
   background-repeat: no-repeat;
 }
 
@@ -15,22 +15,19 @@
 }
 
 .promo__title {
-  font-family: $font-special;
+  font-family: $font-family;
   font-size: 36px;
   line-height: 36px;
-  font-style: normal;
-  font-weight: $standart-weight;
+  font-weight: 400;
   margin: 7px auto;
   margin-bottom: 25px;
 }
 
 .promo__slogan {
-  font-family: $font-special;
+  font-family: $font-family;
   font-size: $standart-size;
   line-height: 14px;
-  text-transform: $up-transform;
-  font-weight: 400;
-  font-style: normal;
+  text-transform: uppercase;
   padding: 0 40px;
   margin-bottom: 29px;
 }
@@ -39,9 +36,17 @@
   background-color: $basic-green;
   font-size: $standart-size;
   line-height: 18px;
-  text-transform: $up-transform;
-  font-weight: $standart-weight;
+  text-transform: uppercase;
   color: $basic;
   text-decoration: none;
   padding: 8px 44px;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: $white-hover;
+  }
 }

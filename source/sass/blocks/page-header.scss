@@ -9,11 +9,19 @@
 
   &::before {
     position: absolute;
-    content: " ";
+    content: "";
     left: 0;
     top: -5px;
     width: 33px;
     height: 38px;
     background-image: url("../img/logo-mobile.png");
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

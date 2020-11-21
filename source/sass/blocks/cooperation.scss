@@ -3,19 +3,16 @@
 }
 
 .cooperation__title {
-  font-family: $font-special, $font-standart;
+  font-family: $font-family;
   font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
-  text-transform: $up-transform;
+  text-transform: uppercase;
   padding: 0 19px;
 }
 
 .cooperation__address {
   font-family: $font-standart;
-  font-style: normal;
-  font-weight: $standart-weight;
   font-size: $standart-size;
   line-height: 20px;
   color: $special_dark-grey;

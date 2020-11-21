@@ -3,11 +3,10 @@
 }
 
 .slider__toggle {
-  font-family: $font-special;
+  font-family: $font-family;
   font-size: 16px;
   line-height: 20px;
-  font-weight: $standart-weight;
-  text-transform: $up-transform;
+  text-transform: uppercase;
   border: none;
   background-color: transparent;
 }

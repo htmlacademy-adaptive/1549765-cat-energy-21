@@ -1,14 +1,14 @@
 .main-nav {
-  font-family: $font-special-medium, $font-standart;
+  font-family: $font-family;
   font-size: 20px;
-  font-weight: 500px;
-  text-transform: $up-transform;
+  font-weight: 500;
+  text-transform: uppercase;
   color: $basic-black;
   background-color: $basic;
 }
 
 .main-nav__list {
-  list-style-type: none;
+  @include clear-list;
   border-bottom: $nav-border;
   padding: 0;
 
@@ -17,5 +17,13 @@
     color: $basic-black;
     line-height: 20px;
     border-bottom: $nav-border;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
