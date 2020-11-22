@@ -1,7 +1,5 @@
 .filter__person {
-  border: none;
-  margin: 0;
-  padding: 0;
+  @include fieldset-none;
 }
 
 .filter__label {
@@ -9,4 +7,5 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  color: $special_dark-grey;
 }

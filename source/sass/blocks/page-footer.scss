@@ -2,8 +2,17 @@
   background-color: $background-gray;
 }
 
+.page-footer__cooperation {
+  margin: 0;
+  padding: 0;
+  padding-top: 28px;
+  background-color: $basic;
+}
+
 .page-footer__logo {
-  padding: 0 20px;
+  display: block;
+  margin: 32px auto;
+  width: 128px;
 
   &:hover {
     opacity: 0.8;
@@ -12,9 +21,8 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-.page-footer__logo-img {
-  padding: 32px 0;
-  border-bottom: $program-border;
+  img {
+    display: block;
+  }
 }

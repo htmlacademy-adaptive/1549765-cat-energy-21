@@ -1,21 +1,9 @@
 .page-header {
   background-color: $basic;
-  padding: 24px 20px 0;
 }
 
 .page-header__logo {
-  position: relative;
-  padding-left: 89px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: -5px;
-    width: 33px;
-    height: 38px;
-    background-image: url("../img/logo-mobile.png");
-  }
+  padding: 0 20px;
 
   &:hover {
     opacity: 0.8;

@@ -1,17 +1,13 @@
 .promo {
   font-family: $font-family;
   color: $basic;
-  background-image: url("../img/cat-background.png");
-  background-repeat: no-repeat;
-}
-
-.promo__style {
-  background-image: url("../img/green-back.png");
+  background-image: url("../img/green-cat.jpg");
   background-repeat: no-repeat;
 }
 
 .promo__wrapper {
-  padding: 27px 20px;
+  padding: 0 20px;
+  padding-top: 27px;
 }
 
 .promo__title {
@@ -19,8 +15,8 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin: 7px auto;
-  margin-bottom: 25px;
+  margin: 0;
+  padding-bottom: 25px;
 }
 
 .promo__slogan {
@@ -28,8 +24,8 @@
   font-size: $standart-size;
   line-height: 14px;
   text-transform: uppercase;
-  padding: 0 40px;
-  margin-bottom: 29px;
+  margin: 0;
+  padding-bottom: 29px;
 }
 
 .promo__to-programs {
@@ -39,7 +35,6 @@
   text-transform: uppercase;
   color: $basic;
   text-decoration: none;
-  padding: 8px 44px;
 
   &:hover {
     background-color: $dark-green;
