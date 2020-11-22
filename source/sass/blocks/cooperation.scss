@@ -1,0 +1,22 @@
+.cooperation {
+  background-color: $basic;
+}
+
+.cooperation__title {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.cooperation__address {
+  font-family: $font-standart;
+  font-size: $standart-size;
+  line-height: 20px;
+  color: $special_dark-grey;
+  margin: 0;
+  padding: 0 20px;
+}

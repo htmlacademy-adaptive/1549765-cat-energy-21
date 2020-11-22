@@ -1,0 +1,53 @@
+.example {
+  background-color: $background-gray-2;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+  padding-top: 27px;
+}
+
+.example__title {
+  font-family: $font-family;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.example__description {
+  font-family: $font-standart;
+  font-size: $standart-size;
+  color: $special_dark-grey;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example__number {
+  font-family: $font-family;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.example__text {
+  font-family: $font-standart;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special_dark-grey;
+}
+
+.example__cost {
+  font-family: $font-family;
+  font-size: $standart-size;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 42px;
+}

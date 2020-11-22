@@ -1,0 +1,11 @@
+.filter__person {
+  @include fieldset-none;
+}
+
+.filter__label {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}

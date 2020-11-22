@@ -1,0 +1,83 @@
+.advantages__wrapper {
+  padding: 0 20px;
+  padding-top: 27px;
+}
+
+.advantages__title {
+  font-family: $font-family;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.advantages__list {
+  @include clear-list;
+  margin-bottom: 42px;
+}
+
+.advantages__item {
+  font-family: $font-standart;
+  font-weight: 400;
+  font-size: $standart-size;
+  color: $special_dark-grey;
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  &--fast {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 5px;
+      background-image: url("../img/fast.svg");
+    }
+  }
+
+  &--healthy {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 5px;
+      background-image: url("../img/healthy.svg");
+    }
+  }
+
+  &--replacement {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 5px;
+      background-image: url("../img/replacement.svg");
+    }
+  }
+
+  &--change {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 5px;
+      background-image: url("../img/change.svg");
+    }
+  }
+}

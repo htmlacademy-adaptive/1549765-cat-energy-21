@@ -1,0 +1,22 @@
+.social {
+  padding: 0 20px;
+  background-color: $background-gray;
+}
+
+.social__list {
+  @include clear-list;
+  border-bottom: $program-border;
+  border-top: $program-border;
+}
+
+.social__link {
+  color: $social-gray;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

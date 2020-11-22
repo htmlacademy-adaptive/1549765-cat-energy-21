@@ -1,0 +1,37 @@
+.main-nav {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $basic-black;
+  background-color: $basic;
+}
+
+.main-nav__wrapper {
+  padding: 0 20px;
+}
+
+.main-nav__list {
+  @include clear-list;
+  border-bottom: $nav-border;
+  margin: 0;
+
+  a {
+    display: block;
+    color: $basic-black;
+    line-height: 20px;
+    margin: 23px auto;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__item {
+  border-top: $nav-border;
+}
