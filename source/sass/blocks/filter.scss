@@ -1,5 +1,30 @@
 .filter__person {
   @include fieldset-none;
+  margin-bottom: 27px;
+}
+
+.filter__goal {
+  @include fieldset-none;
+  border-top: $program-border;
+  padding-top: 20px;
+  border-bottom: $program-border;
+}
+
+.filter__contacts {
+  @include fieldset-none;
+}
+
+.filter__comment {
+  @include fieldset-none;
+}
+
+.filter__add {
+  @include fieldset-none;
+}
+
+.filter__title {
+  padding: 26px 0 0;
+  margin-bottom: 33px;
 }
 
 .filter__label {
