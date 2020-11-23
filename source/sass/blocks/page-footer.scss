@@ -2,10 +2,13 @@
   background-color: $background-gray;
 }
 
+.page-footer__wrapper {
+  padding-top: 28px;
+}
+
 .page-footer__cooperation {
   margin: 0;
   padding: 0;
-  padding-top: 28px;
   background-color: $basic;
 }
 
@@ -25,4 +28,8 @@
   img {
     display: block;
   }
+}
+
+.page-footer__color {
+  background-color: $background-gray;
 }

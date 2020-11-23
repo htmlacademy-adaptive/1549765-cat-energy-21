@@ -1,6 +1,5 @@
 .form__wrapper {
-  margin: 0;
-  padding: 0 20px;
+  padding-top: 37px;
 }
 
 .form__title {
@@ -8,4 +7,19 @@
   font-size: $standart-size;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+
+.form__legend {
+  font-family: $font-standart;
+  margin-top: 0;
+  margin-bottom: 32px;
 }

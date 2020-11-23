@@ -29,12 +29,8 @@
 }
 
 .promo__to-programs {
-  background-color: $basic-green;
   font-size: $standart-size;
   line-height: 18px;
-  text-transform: uppercase;
-  color: $basic;
-  text-decoration: none;
 
   &:hover {
     background-color: $dark-green;
