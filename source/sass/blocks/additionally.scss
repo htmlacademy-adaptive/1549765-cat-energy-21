@@ -1,6 +1,4 @@
 .additionally__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  @include clear-list;
   margin-bottom: 34px;
 }
