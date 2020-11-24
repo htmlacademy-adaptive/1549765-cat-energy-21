@@ -1,0 +1,13 @@
+.catalog__wrapper {
+  padding-top: 41px;
+}
+
+.catalog__list {
+  @include clear-list;
+  border-top: $nav-border;
+}
+
+.catalog__item {
+  padding-top: 8px;
+  border-bottom: $nav-border;
+}

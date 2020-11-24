@@ -13,6 +13,7 @@
 
 .main-nav__list {
   @include clear-list;
+  border-bottom: $nav-border;
 
   a {
     display: block;

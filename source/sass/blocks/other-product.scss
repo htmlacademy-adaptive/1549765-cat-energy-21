@@ -1,0 +1,30 @@
+.other-product {
+  margin-bottom: 19px;
+}
+
+.other-product__link-text {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $form_dark-gray;
+  margin-bottom: 13px;
+}
+
+.other-product__block {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.other-product__value {
+  margin-left: 0;
+}
+
+.other-product__item {
+  font-family: $font-standart;
+  font-size: $standart-size;
+  font-weight: 400;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
