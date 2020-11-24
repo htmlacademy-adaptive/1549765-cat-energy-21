@@ -1,0 +1,27 @@
+.other__wrapper {
+  padding-top: 28px;
+}
+
+.other__title {
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.other__list {
+  @include clear-list;
+  border-top: $nav-border;
+}
+
+.other__gift {
+  background-image: url("../img/gift-back.jpg");
+  background-repeat: no-repeat;
+  padding-top: 186px;
+  padding-bottom: 43px;
+}
+
+.other__item {
+  padding-top: 13px;
+  border-bottom: $nav-border;
+}
