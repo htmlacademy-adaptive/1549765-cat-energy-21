@@ -1,10 +1,29 @@
-.page-header {
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: $basic;
+  min-width: 280px;
+  padding: 0 20px;
+  margin-top: 11px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 30px;
+    padding-bottom: 0;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 53px 110px;
+    padding-bottom: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .page-header__logo {
-  padding: 0 20px;
-
   &:hover {
     opacity: 0.8;
   }

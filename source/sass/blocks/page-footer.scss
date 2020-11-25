@@ -17,6 +17,10 @@
   margin: 32px auto;
   width: 128px;
 
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -32,4 +36,20 @@
 
 .page-footer__color {
   background-color: $background-gray;
+}
+
+.page-footer__link {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 60px;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }

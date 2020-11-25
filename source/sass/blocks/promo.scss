@@ -3,11 +3,26 @@
   color: $basic;
   background-image: url("../img/green-cat.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-image: none;
+    color: $basic-black;
+  }
 }
 
 .promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 0 20px;
   padding-top: 27px;
+  width: auto;
+
+  @media (min-width: 768px) {
+    padding: 0 112px;
+    align-items: flex-start;
+  }
 }
 
 .promo__title {
@@ -17,6 +32,13 @@
   font-weight: 400;
   margin: 0;
   padding-bottom: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 414px;
+    order: 1;
+  }
 }
 
 .promo__slogan {
@@ -26,6 +48,12 @@
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 29px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    order: 1;
+  }
 }
 
 .promo__to-programs {
@@ -39,5 +67,15 @@
   &:active {
     background-color: $dark-green;
     color: $white-hover;
+  }
+
+  @media (min-width: 768px) {
+    order: 1;
+  }
+}
+
+.promo__img {
+  @media (min-width: 768px) {
+    order: 2;
   }
 }

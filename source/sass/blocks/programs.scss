@@ -1,6 +1,22 @@
 .programs__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 0 20px;
+  min-width: 220px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: auto;
+    column-gap: 80px;
+  }
 }
 
 .programs__box {
@@ -9,6 +25,15 @@
   padding-top: 30px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-top: 77px;
+    padding-left: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: auto 51px;
+  }
 
   &:last-child {
     margin-bottom: 0;
