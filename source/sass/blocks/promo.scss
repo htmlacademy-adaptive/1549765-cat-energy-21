@@ -1,12 +1,35 @@
 .promo {
   font-family: $font-family;
   color: $basic;
-  background-image: url("../img/green-cat.jpg");
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, $basic 40%);
+  position: relative;
+  z-index: 2;
 
-  @media (min-width: 768px) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url("../img/green-cat.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     background-image: none;
     color: $basic-black;
+    background-color: $basic;
+  }
+
+  @media (min-width: $descktop-width) {
+    background: none;
   }
 }
 
@@ -15,13 +38,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 20px;
   padding-top: 27px;
-  width: auto;
+  position: relative;
+  z-index: 2;
 
-  @media (min-width: 768px) {
-    padding: 0 112px;
+  @media (min-width: $tablet-width) {
     align-items: flex-start;
+    padding-left: 87px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding-left: 190px;
   }
 }
 
@@ -32,8 +59,9 @@
   font-weight: 400;
   margin: 0;
   padding-bottom: 25px;
+  max-width: 249px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     max-width: 414px;
@@ -49,7 +77,7 @@
   margin: 0;
   padding-bottom: 29px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     order: 1;
@@ -69,13 +97,13 @@
     color: $white-hover;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     order: 1;
   }
 }
 
 .promo__img {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     order: 2;
   }
 }

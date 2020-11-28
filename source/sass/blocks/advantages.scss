@@ -2,11 +2,11 @@
   padding: 0 20px;
   padding-top: 27px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $descktop-width) {
     padding: 0 110px;
   }
 }
@@ -19,7 +19,7 @@
   margin-top: 0;
   margin-bottom: 38px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -28,17 +28,19 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+  counter-reset: myCounter;
 
   @include clear-list;
   margin-bottom: 42px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 153px;
+    counter-reset: myCounter;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $descktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 79px;
   }
@@ -52,12 +54,31 @@
   padding-left: 80px;
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     max-width: 230px;
     padding: 0;
     padding-top: 155px;
+    z-index: 2;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      font-family: $font-family;
+      font-size: 280px;
+      line-height: 280px;
+      color: $background-gray;
+      display: inline-block;
+      text-align: center;
+      top: 0;
+      right: 0;
+      width: 134px;
+      height: 280px;
+      z-index: 1;
+    }
   }
 
   &--fast {

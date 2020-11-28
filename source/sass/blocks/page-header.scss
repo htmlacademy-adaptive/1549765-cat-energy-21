@@ -2,24 +2,26 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   background-color: $basic;
-  min-width: 280px;
-  padding: 0 20px;
   margin-top: 11px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 30px;
     padding-bottom: 0;
     margin-bottom: 62px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $descktop-width) {
     padding: 53px 110px;
     padding-bottom: 0;
     margin-bottom: 32px;
+    position: relative;
+    z-index: 2;
+    background: none;
   }
 }
 

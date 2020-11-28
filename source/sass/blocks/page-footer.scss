@@ -7,8 +7,7 @@
 }
 
 .page-footer__cooperation {
-  margin: 0;
-  padding: 0;
+
   background-color: $basic;
 }
 
@@ -17,7 +16,7 @@
   margin: 32px auto;
   width: 128px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 
@@ -39,17 +38,15 @@
 }
 
 .page-footer__link {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px;
-    margin: 60px;
   }
 }
 
 .page-footer__social {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }

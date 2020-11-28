@@ -1,5 +1,6 @@
 .cooperation {
   background-color: $basic;
+  position: relative;
 }
 
 .cooperation__title {
@@ -26,7 +27,19 @@
   justify-content: space-between;
   padding: 0 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 0 71px;
   }
+
+  @media (min-width: $descktop-width) {
+    position: absolute;
+    background-color: $basic;
+    top: 50%;
+    left: 50%;
+    transform: translate(-600px, -50%);
+  }
+}
+
+.cooperation__map {
+  width: 100%;
 }

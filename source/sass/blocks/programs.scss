@@ -2,15 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
-  padding: 0 20px;
-  min-width: 220px;
 
-  @media (min-width: 768px) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: 1440px) {
+  @media (min-width: $descktop-width) {
     padding: 0 110px;
     display: grid;
     grid-template-columns: 570px 570px;
@@ -26,12 +19,12 @@
   margin: 0;
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-left: 52px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $descktop-width) {
     padding: auto 51px;
   }
 

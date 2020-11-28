@@ -3,3 +3,33 @@
   grid-template-rows: min-content 1fr min-content;
   min-width: 280px;
 }
+
+.page__top {
+  @media (min-width: $descktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: rgba(104, 183, 56, 0.85);
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: url("../img/index-background-desktop.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      z-index: 1;
+    }
+  }
+}
