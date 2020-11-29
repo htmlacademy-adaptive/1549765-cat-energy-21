@@ -1,4 +1,24 @@
 .additionally__list {
   @include clear-list;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $descktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.additionally__item {
+  @media (min-width: $tablet-width) {
+    width: 220px;
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-right: 104px;
+  }
 }

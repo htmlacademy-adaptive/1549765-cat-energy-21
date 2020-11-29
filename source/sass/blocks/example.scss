@@ -35,7 +35,7 @@
 
 .example__grad {
   @media (min-width: $descktop-width) {
-    background: linear-gradient(to right, #f2f2f2 65%, $background-gray-2 35%);
+    background: linear-gradient(to right, $background-gray 65%, $background-gray-2 35%);
   }
 }
 

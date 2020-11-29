@@ -27,7 +27,7 @@
   flex-direction: column;
   width: auto;
 
-  a {
+  .main-nav__link {
     display: block;
     color: $basic-black;
     line-height: 20px;
@@ -46,9 +46,14 @@
     }
 
     @media (min-width: $descktop-width) {
-      color: $basic;
       font-size: 20px;
       line-height: 30px;
+    }
+
+    &--colorbg {
+      @media (min-width: $descktop-width) {
+        color: $basic;
+      }
     }
   }
 
@@ -71,7 +76,7 @@
     &--active {
       border-bottom: 2px solid #68b738;
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $descktop-width) {
         border-bottom: 2px solid $basic;
       }
     }

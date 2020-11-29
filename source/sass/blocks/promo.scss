@@ -1,7 +1,6 @@
 .promo {
   font-family: $font-family;
   color: $basic;
-  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, $basic 40%);
   position: relative;
   z-index: 2;
 
@@ -15,6 +14,7 @@
     background-image: url("../img/green-cat.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+    background-color: #64a73c;
     z-index: 1;
 
     @media (min-width: $tablet-width) {
