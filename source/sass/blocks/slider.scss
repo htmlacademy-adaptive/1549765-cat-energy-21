@@ -5,4 +5,9 @@
   text-transform: uppercase;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

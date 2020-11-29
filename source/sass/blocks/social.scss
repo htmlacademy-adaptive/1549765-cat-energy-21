@@ -4,9 +4,16 @@
 }
 
 .social__list {
+  display: flex;
+  justify-content: space-around;
+
   @include clear-list;
   border-bottom: $program-border;
   border-top: $program-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__link {

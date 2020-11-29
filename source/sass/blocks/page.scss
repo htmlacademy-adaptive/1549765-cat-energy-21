@@ -1,0 +1,25 @@
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-width: 280px;
+}
+
+.page__top {
+  @media (min-width: $descktop-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: url("../img/index-background-desktop.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-color: $bg-green;
+      z-index: 1;
+    }
+  }
+}

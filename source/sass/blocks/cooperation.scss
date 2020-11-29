@@ -1,5 +1,6 @@
 .cooperation {
   background-color: $basic;
+  position: relative;
 }
 
 .cooperation__title {
@@ -9,7 +10,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-top: 0;
-  padding: 0 20px;
+  max-width: 171px;
 }
 
 .cooperation__address {
@@ -18,5 +19,27 @@
   line-height: 20px;
   color: $special_dark-grey;
   margin: 0;
+  max-width: 160px;
+}
+
+.cooperation__text {
+  display: flex;
+  justify-content: space-between;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 71px;
+  }
+
+  @media (min-width: $descktop-width) {
+    position: absolute;
+    background-color: $basic;
+    top: 50%;
+    left: 50%;
+    transform: translate(-600px, -50%);
+  }
+}
+
+.cooperation__map {
+  width: 100%;
 }

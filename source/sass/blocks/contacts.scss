@@ -1,3 +1,14 @@
 .contacts__list {
   @include clear-list;
+
+  @media (min-width: $descktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts__item {
+  @media (min-width: $descktop-width) {
+    width: 569px;
+  }
 }

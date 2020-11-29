@@ -1,6 +1,15 @@
 .programs__wrapper {
-  margin: 0;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $descktop-width) {
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: auto;
+    column-gap: 80px;
+  }
 }
 
 .programs__box {
@@ -9,6 +18,15 @@
   padding-top: 30px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-left: 52px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding: auto 51px;
+  }
 
   &:last-child {
     margin-bottom: 0;
