@@ -5,9 +5,27 @@
 .catalog__list {
   @include clear-list;
   border-top: $nav-border;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog__item {
   padding-top: 8px;
   border-bottom: $nav-border;
+
+  &:nth-child(odd) {
+    @media (min-width: $tablet-width) {
+      margin-right: 60px;
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-right: 80px;
+  }
+
+  &:nth-child(4n) {
+    @media (min-width: $descktop-width) {
+      margin-right: 0;
+    }
+  }
 }
