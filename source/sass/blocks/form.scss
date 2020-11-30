@@ -1,5 +1,15 @@
 .form__wrapper {
   padding-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    padding-top: 37px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding: 0;
+    padding-top: 37px;
+  }
 }
 
 .form__title {
@@ -9,6 +19,12 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+  }
 }
 
 .form__button {
@@ -16,10 +32,25 @@
   line-height: 20px;
   font-weight: 400;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form__legend {
   font-family: $font-standart;
   margin-top: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.form__sending {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

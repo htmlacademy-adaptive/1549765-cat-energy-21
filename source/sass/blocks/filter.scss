@@ -1,6 +1,12 @@
 .filter__person {
   @include fieldset-none;
   margin-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $descktop-width) {
+    width: 569px;
+  }
 }
 
 .filter__goal {
@@ -8,6 +14,10 @@
   border-top: $program-border;
   padding-top: 20px;
   border-bottom: $program-border;
+
+  @media (min-width: $descktop-width) {
+    width: 569px;
+  }
 }
 
 .filter__contacts {
@@ -22,6 +32,13 @@
   @include fieldset-none;
 }
 
+.filter__section {
+  @media (min-width: $descktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .filter__title {
   padding: 26px 0 0;
   margin-bottom: 33px;
@@ -33,4 +50,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
