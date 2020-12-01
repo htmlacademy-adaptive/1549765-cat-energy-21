@@ -1,5 +1,19 @@
 .other-product {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 19px;
+
+  @media (min-width: $descktop-width) {
+    flex-direction: row;
+  }
+}
+
+.other-product__section {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .other-product__link-text {
@@ -22,6 +36,8 @@
 }
 
 .other-product__item {
+  display: flex;
+  justify-content: space-between;
   font-family: $font-standart;
   font-size: $standart-size;
   font-weight: 400;

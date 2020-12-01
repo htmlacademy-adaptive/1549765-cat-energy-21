@@ -1,5 +1,30 @@
 .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  min-height: 190px;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 245px;
+  }
+}
+
+.product__inf {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    flex-direction: column;
+  }
 }
 
 .product__link-text {
@@ -13,6 +38,7 @@
 }
 
 .product__property-item {
+  display: flex;
   font-family: $font-standart;
   font-weight: 400;
   font-size: 12px;
