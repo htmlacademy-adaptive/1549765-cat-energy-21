@@ -75,10 +75,6 @@
     max-width: 700px;
     margin-bottom: 54px;
   }
-
-  @media (min-width: $descktop-width) {
-
-  }
 }
 
 .example__list {
@@ -105,7 +101,7 @@
   width: 124px;
   height: 56px;
   padding-top: 14px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 3px;
   order: 2;
@@ -209,7 +205,7 @@
   width: 84px;
   height: 14px;
   background-color: $basic;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 6px;
   position: relative;
