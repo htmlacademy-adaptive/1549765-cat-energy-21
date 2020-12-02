@@ -13,6 +13,11 @@
     justify-content: space-between;
     padding-bottom: 0;
     margin-bottom: 62px;
+    margin: auto;
+    margin-top: 31px;
+    margin-bottom: 62px;
+    padding: 0 30px;
+    max-width: 708px;
   }
 
   @media (min-width: $descktop-width) {
@@ -22,10 +27,21 @@
     position: relative;
     z-index: 2;
     background: none;
+    max-width: 1220px;
   }
 }
 
 .page-header__logo {
+  margin-left: 0;
+  padding: 0 20px;
+  padding-bottom: 12px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 174px;
+  }
+
   &:hover {
     opacity: 0.8;
   }

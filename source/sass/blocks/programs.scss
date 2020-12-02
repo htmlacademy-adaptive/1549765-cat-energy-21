@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
   @media (min-width: $descktop-width) {
     padding: 0 110px;
     display: grid;
@@ -15,6 +19,7 @@
 .programs__box {
   background-color: $background-gray;
   color: $basic-black;
+  padding: 0 20px;
   padding-top: 30px;
   margin: 0;
   margin-bottom: 20px;
@@ -22,10 +27,13 @@
   @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-left: 52px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $descktop-width) {
     padding: auto 51px;
+    min-height: 242px;
+    margin-bottom: 0;
   }
 
   &:last-child {

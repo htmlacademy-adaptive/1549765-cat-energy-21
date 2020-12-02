@@ -5,12 +5,17 @@
   line-height: 37px;
   text-transform: uppercase;
   padding: 0;
-  padding-left: 91px;
+  padding-left: 71px;
   margin-top: 0;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding-left: 162px;
   }
 
   &--slim {
@@ -19,19 +24,27 @@
     &::before {
       content: "";
       position: absolute;
-      left: 23px;
-      top: 20px;
+      left: 3px;
+      top: -10px;
       width: 50px;
       height: 53px;
       background-image: url("../img/cat_slim.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
-        top: -50px;
-        left: 430px;
+        top: 5px;
+        left: 395px;
         width: 200px;
         height: 211px;
         background-image: url("../img/cat_back_slim.svg");
+      }
+
+      @media (min-width: $descktop-width) {
+        top: -40px;
+        left: 0;
+        width: 100px;
+        height: 106px;
+        background-image: url("../img/cat_back__dt.svg");
       }
     }
   }
@@ -42,19 +55,27 @@
     &::before {
       content: "";
       position: absolute;
-      left: 15px;
-      top: 20px;
+      left: -8px;
+      top: -8px;
       width: 67px;
       height: 50px;
       background-image: url("../img/cat__mass.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
-        top: -50px;
-        left: 380px;
+        top: 15px;
+        left: 360px;
         width: 268px;
         height: 211px;
         background-image: url("../img/cat_back.svg");
+      }
+
+      @media (min-width: $descktop-width) {
+        top: -40px;
+        left: -10px;
+        width: 134px;
+        height: 100px;
+        background-image: url("../img/cat_mass_dt.svg");
       }
     }
   }
@@ -70,21 +91,27 @@
   font-size: $standart-size;
   line-height: 18px;
   border-bottom: $program-border;
-  margin-right: 33px;
+  margin: 0;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-right: 279px;
+    max-width: 376px;
     border-bottom: none;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $descktop-width) {
     margin-right: 0;
+    max-width: 467px;
+    margin-bottom: 0;
   }
 }
 
 .program__to-catalog {
+  display: block;
   font-family: $font-family;
   text-transform: uppercase;
   font-size: 16px;
@@ -93,15 +120,58 @@
   color: $basic-black;
   text-decoration: none;
   position: relative;
+  margin-bottom: 22px;
+
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 120px;
+      top: 10;
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 120px;
+      top: 10;
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
 
   &::after {
     content: "";
     position: absolute;
-    left: 120px;
-    top: 20px;
-    width: 32px;
-    height: 10px;
+    left: 100px;
+    top: 0;
+    width: 24px;
+    height: 12px;
     background-image: url("../img/icon_arrow.svg");
     background-repeat: no-repeat;
+
+
+    @media (min-width: $tablet-width) {
+      left: 120px;
+      top: 10px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 58px;
   }
 }

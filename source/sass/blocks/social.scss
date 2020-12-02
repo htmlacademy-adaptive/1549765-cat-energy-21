@@ -1,19 +1,27 @@
 .social {
-  padding: 0 20px;
+  padding: 0;
   background-color: $background-gray;
 }
 
 .social__list {
   display: flex;
   justify-content: space-around;
+  min-width: 130px;
 
   @include clear-list;
   border-bottom: $program-border;
   border-top: $program-border;
+  padding: 20px 73px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0;
+    min-width: 129px;
   }
+}
+
+.social__item {
+  padding: 20px auto;
 }
 
 .social__link {
