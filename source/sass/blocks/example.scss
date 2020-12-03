@@ -4,10 +4,12 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, $basic 50%, $background-gray-2 50%);
+    padding-bottom: 33px;
   }
 
   @media (min-width: $descktop-width) {
     background: none;
+    padding: 0;
   }
 }
 
@@ -20,20 +22,44 @@
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 750px;
+      z-index: 1;
+      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    }
   }
 }
 
 .example__wrap {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $descktop-width) {
     margin: 0;
     padding: 0;
     width: 570px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $descktop-width) {
+    height: 100%;
+    padding-bottom: 0;
+    justify-content: flex-end;
   }
 }
 
 .example__grad {
   @media (min-width: $descktop-width) {
+    position: relative;
     background: linear-gradient(to right, $background-gray 65%, $background-gray-2 35%);
+    max-height: 462px;
   }
 }
 
@@ -55,8 +81,7 @@
   }
 
   @media (min-width: $descktop-width) {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    margin-bottom: 73px;
   }
 }
 
@@ -75,6 +100,11 @@
     max-width: 700px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: $descktop-width) {
+    max-width: 436px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
@@ -85,6 +115,10 @@
 
   @media (min-width: $tablet-width) {
     width: 366px;
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -162,8 +196,11 @@
 
   @media (min-width: $descktop-width) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     min-width: 327px;
+    padding-top: 0;
+    margin-bottom: 75px;
   }
 }
 
@@ -181,6 +218,7 @@
   @media (min-width: $descktop-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 }
 
@@ -199,6 +237,16 @@
     width: 780px;
     height: 620px;
   }
+
+  @media (min-width: $descktop-width) {
+    height: 496px;
+    width: auto;
+    position: absolute;
+    top: -171px;
+    left: 680px;
+    z-index: 2;
+    margin-bottom: 0;
+  }
 }
 
 .example__scale {
@@ -209,6 +257,13 @@
   box-sizing: border-box;
   border-radius: 6px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: #cdcdcd;
+    border: none;
+  }
 }
 
 .example__bar {
@@ -219,4 +274,27 @@
   position: absolute;
   top: 3px;
   left: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: $basic;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    margin-top: -20px;
+    margin-left: 214px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $basic-green;
+    }
+  }
 }

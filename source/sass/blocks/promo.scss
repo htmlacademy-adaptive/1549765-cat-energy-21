@@ -50,8 +50,9 @@
   }
 
   @media (min-width: $descktop-width) {
-    padding-left: 190px;
+    padding-left: 205px;
     margin-bottom: 0;
+    position: relative;
   }
 }
 
@@ -123,5 +124,13 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+  }
+
+  @media (min-width: $descktop-width) {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    right: 320px;
+    top: -85px;
   }
 }

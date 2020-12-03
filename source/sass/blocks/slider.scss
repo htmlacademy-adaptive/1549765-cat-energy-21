@@ -1,6 +1,12 @@
 .slider {
   display: flex;
   justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  @media (min-width: $descktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .slider__toggle {

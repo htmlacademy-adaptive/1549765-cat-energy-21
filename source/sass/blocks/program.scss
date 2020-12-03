@@ -16,6 +16,7 @@
 
   @media (min-width: $descktop-width) {
     padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   &--slim {
@@ -173,5 +174,6 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 58px;
+    width: 161px;
   }
 }

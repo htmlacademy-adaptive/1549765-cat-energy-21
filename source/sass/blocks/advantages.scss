@@ -35,17 +35,16 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
+    flex-direction: row;
+    flex-wrap: wrap;
     counter-reset: myCounter;
     padding-bottom: 10px;
     border-bottom: $nav-border;
   }
 
   @media (min-width: $descktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 79px;
+    border-bottom: none;
+    margin-bottom: 0;
   }
 }
 
@@ -60,11 +59,16 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    max-width: 230px;
+    width: 230px;
     padding: 0;
     padding-top: 155px;
     margin-bottom: 90px;
+    margin-right: 153px;
     position: relative;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
 
     &::after {
       position: absolute;
@@ -81,6 +85,15 @@
       width: 134px;
       height: 280px;
       z-index: 1;
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-right: 94px;
+    width: 248px;
+
+    &:nth-child(2n) {
+      margin-right: auto;
     }
   }
 
