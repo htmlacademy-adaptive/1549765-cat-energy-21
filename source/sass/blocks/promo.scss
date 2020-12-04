@@ -47,10 +47,11 @@
     align-items: flex-start;
     padding-left: 200px;
     padding-top: 0;
+    height: 810px;
   }
 
   @media (min-width: $descktop-width) {
-    padding-left: 205px;
+    padding-left: 208px;
     margin-bottom: 0;
     position: relative;
   }
@@ -71,7 +72,7 @@
     line-height: 60px;
     max-width: 414px;
     order: 1;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     text-align: start;
   }
 }
@@ -88,7 +89,7 @@
     font-size: 20px;
     line-height: 20px;
     order: 1;
-    margin-bottom: 49px;
+    margin-bottom: 52px;
   }
 }
 
@@ -116,6 +117,7 @@
     max-width: 244px;
     padding-bottom: 10px;
     order: 1;
+    z-index: 2;
   }
 }
 
@@ -123,7 +125,12 @@
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     order: 2;
+    width: 709px;
+    height: 609px;
+    z-index: 1;
+    top: 200px;
   }
 
   @media (min-width: $descktop-width) {

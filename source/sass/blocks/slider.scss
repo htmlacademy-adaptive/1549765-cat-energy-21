@@ -6,6 +6,7 @@
 
   @media (min-width: $descktop-width) {
     padding-bottom: 70px;
+    padding-left: 40px;
   }
 }
 
@@ -20,5 +21,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted $special_dark-grey;
   }
 }

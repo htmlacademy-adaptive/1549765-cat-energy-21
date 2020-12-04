@@ -61,7 +61,7 @@
     line-height: 24px;
     width: 230px;
     padding: 0;
-    padding-top: 155px;
+    padding-top: 153px;
     margin-bottom: 90px;
     margin-right: 153px;
     position: relative;
@@ -90,10 +90,14 @@
 
   @media (min-width: $descktop-width) {
     margin-right: 94px;
-    width: 248px;
+    min-width: 230;
 
     &:nth-child(2n) {
-      margin-right: auto;
+      margin-right: 94px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 
@@ -111,6 +115,9 @@
 
       @media (min-width: $tablet-width) {
         top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/fast_dt.svg");
       }
     }
   }
@@ -129,6 +136,9 @@
 
       @media (min-width: $tablet-width) {
         top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/healthy_dt.svg");
       }
     }
   }
@@ -147,6 +157,9 @@
 
       @media (min-width: $tablet-width) {
         top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/replacement_dt.svg");
       }
     }
   }
@@ -165,6 +178,9 @@
 
       @media (min-width: $tablet-width) {
         top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/change_dt.svg");
       }
     }
   }
