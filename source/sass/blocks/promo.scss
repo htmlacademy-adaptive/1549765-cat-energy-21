@@ -45,9 +45,10 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    padding-left: 200px;
+    padding-left: 112px;
     padding-top: 0;
     height: 810px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $descktop-width) {
@@ -72,8 +73,9 @@
     line-height: 60px;
     max-width: 414px;
     order: 1;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     text-align: start;
+    padding-left: 5px;
   }
 }
 
@@ -89,14 +91,16 @@
     font-size: 20px;
     line-height: 20px;
     order: 1;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
+    padding-left: 5px;
   }
 }
 
 .promo__to-programs {
   font-size: $standart-size;
   line-height: 18px;
-  padding: 6px 44px;
+  padding: 0 44px;
+  padding-top: 9px;
   text-align: center;
   width: 192px;
   min-height: 28px;
@@ -127,17 +131,18 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     order: 2;
-    width: 709px;
+    width: 609px;
     height: 609px;
     z-index: 1;
     top: 200px;
+    right: 30px;
   }
 
   @media (min-width: $descktop-width) {
     position: absolute;
     width: 552px;
     height: 499px;
-    right: 320px;
+    right: 340px;
     top: -85px;
   }
 }

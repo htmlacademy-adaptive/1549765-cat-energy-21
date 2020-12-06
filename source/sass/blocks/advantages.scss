@@ -38,7 +38,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     counter-reset: myCounter;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: $nav-border;
   }
 
@@ -193,6 +193,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    width: 245px;
     line-height: 24px;
   }
 }
