@@ -310,6 +310,9 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 520px;
+    left: 40px;
+    text-align: center;
+    justify-content: center;
   }
 
   @media (min-width: $descktop-width) {

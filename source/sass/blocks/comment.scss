@@ -1,3 +1,14 @@
+.comment {
+  border-top: 2px solid $basic-green;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 88px;
+    margin-bottom: 89px;
+    position: relative;
+  }
+}
+
 .comment__text {
   font-family: $font-family;
   font-size: 16px;
@@ -12,4 +23,14 @@
   padding-top: 9px;
   padding-left: 15px;
   padding-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 631px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $descktop-width) {
+    min-width: 1220px;
+  }
 }

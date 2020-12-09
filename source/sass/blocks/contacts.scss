@@ -1,3 +1,14 @@
+.contacts {
+  border-top: 2px solid $basic-green;
+  position: relative;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 89px;
+    margin-bottom: 75px;
+  }
+}
+
 .contacts__list {
   @include clear-list;
 
@@ -11,4 +22,8 @@
   @media (min-width: $descktop-width) {
     width: 569px;
   }
+}
+
+.contacts__text {
+  padding-right: 13px;
 }

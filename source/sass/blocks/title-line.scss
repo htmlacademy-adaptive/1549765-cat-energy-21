@@ -6,5 +6,9 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    position: absolute;
+    top: -25px;
+    left: 40px;
+    background-color: $basic;
   }
 }

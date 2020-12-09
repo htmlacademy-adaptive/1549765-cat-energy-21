@@ -1,4 +1,51 @@
+.goal {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 95px;
+  }
+}
+
 .goal__list {
   @include clear-list;
   margin-bottom: 22px;
+}
+
+.goal__input:checked + .input-option__radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/rb-active.svg");
+
+  &:hover {
+    background-image: url("../img/rb-active-hover.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/radiobutton_active-dt.svg");
+
+    &:hover {
+      background-image: url("../img/radiobutton_active_hover-dt.svg");
+    }
+  }
+}
+
+.goal__input:disabled + .input-option__radio {
+  background-image: url("../img/radiobutton_active_down.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/radiobutton_down-dt.svg");
+  }
+}
+
+.goal__input:checked:disabled + .input-option__radio {
+  background-image: url("../img/radiobutton_active_dis.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/radiobutton_active_dis-dt.svg");
+  }
 }

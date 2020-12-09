@@ -1,14 +1,12 @@
 .form__wrapper {
-  padding-top: 37px;
-
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
-    padding-top: 37px;
+    padding: 0 70px;
+    max-width: 630px;
   }
 
   @media (min-width: $descktop-width) {
-    padding: 0;
-    padding-top: 37px;
+    padding: 0 110px;
+    max-width: 1220px;
   }
 }
 
@@ -19,6 +17,7 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 39px;
+  max-width: 226px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -48,6 +47,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding: 13px 45px;
+    width: 280px;
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 568px;
   }
 }
 
@@ -63,7 +68,12 @@
 }
 
 .form__sending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

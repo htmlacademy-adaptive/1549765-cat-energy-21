@@ -1,3 +1,12 @@
+.additionally {
+  border-top: 2px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 69px;
+    position: relative;
+  }
+}
+
 .additionally__list {
   @include clear-list;
   margin-bottom: 34px;
@@ -15,10 +24,48 @@
 
 .additionally__item {
   @media (min-width: $tablet-width) {
-    width: 220px;
+    width: 221px;
+    margin-right: 100px;
   }
 
   @media (min-width: $descktop-width) {
-    margin-right: 104px;
+    margin-right: 0;
+  }
+}
+
+.additionally__input:checked + .input-option__checkbox {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/check_active.svg");
+
+  &:hover {
+    background-image: url("../img/cb_active_hover.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/cb-active-dt.svg");
+
+    &:hover {
+      background-image: url("../img/cb-active-hover-dt.svg");
+    }
+  }
+}
+
+.additionally__input:disabled + .input-option__checkbox {
+  background-image: url("../img/cb_dis.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cb-dis-dt.svg");
+  }
+}
+
+.additionally__input:checked:disabled + .input-option__checkbox {
+  background-image: url("../img/cb_active_dis.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cb-dis-active-dt.svg");
   }
 }
