@@ -32,6 +32,19 @@
   line-height: 20px;
   font-weight: 400;
   margin-bottom: 21px;
+  padding: 6px 44px;
+  text-align: center;
+  width: 100%;
+
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: $white-hover;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -3,18 +3,24 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
   @media (min-width: $descktop-width) {
     padding: 0 110px;
     display: grid;
     grid-template-columns: 570px 570px;
     grid-template-rows: auto;
     column-gap: 80px;
+    margin-bottom: 71px;
   }
 }
 
 .programs__box {
   background-color: $background-gray;
   color: $basic-black;
+  padding: 0 20px;
   padding-top: 30px;
   margin: 0;
   margin-bottom: 20px;
@@ -22,10 +28,75 @@
   @media (min-width: $tablet-width) {
     padding-top: 77px;
     padding-left: 52px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $descktop-width) {
     padding: auto 51px;
+    min-height: 242px;
+    margin-bottom: 0;
+  }
+
+  &--slim {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 210px;
+      top: 21px;
+      width: 50px;
+      height: 53px;
+      background-image: url("../img/cat_slim.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        right: 62px;
+        width: 200px;
+        height: 211px;
+        background-image: url("../img/cat_back_slim.svg");
+      }
+
+      @media (min-width: $descktop-width) {
+        top: 25px;
+        left: 50px;
+        width: 100px;
+        height: 106px;
+        background-image: url("../img/cat_back__dt.svg");
+      }
+    }
+  }
+
+  &--mass {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 200px;
+      top: 24px;
+      width: 67px;
+      height: 50px;
+      background-image: url("../img/cat__mass.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 91px;
+        right: 28px;
+        width: 268px;
+        height: 211px;
+        background-image: url("../img/cat_back.svg");
+      }
+
+      @media (min-width: $descktop-width) {
+        top: 28px;
+        left: 35px;
+        width: 134px;
+        height: 100px;
+        background-image: url("../img/cat_mass_dt.svg");
+      }
+    }
   }
 
   &:last-child {

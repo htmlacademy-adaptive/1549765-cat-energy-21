@@ -22,6 +22,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -31,18 +32,19 @@
   counter-reset: myCounter;
 
   @include clear-list;
-  margin-bottom: 42px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
+    flex-direction: row;
+    flex-wrap: wrap;
     counter-reset: myCounter;
+    padding-bottom: 12px;
+    border-bottom: $nav-border;
   }
 
   @media (min-width: $descktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 79px;
+    border-bottom: none;
+    margin-bottom: 0;
   }
 }
 
@@ -52,16 +54,21 @@
   font-size: $standart-size;
   color: $special_dark-grey;
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    max-width: 230px;
+    width: 230px;
     padding: 0;
-    padding-top: 155px;
-    z-index: 2;
+    padding-top: 153px;
+    margin-bottom: 90px;
+    margin-right: 153px;
     position: relative;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
 
     &::after {
       position: absolute;
@@ -74,10 +81,23 @@
       display: inline-block;
       text-align: center;
       top: 0;
-      right: 0;
+      right: -10px;
       width: 134px;
       height: 280px;
       z-index: 1;
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-right: 94px;
+    min-width: 230;
+
+    &:nth-child(2n) {
+      margin-right: 94px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 
@@ -90,8 +110,15 @@
       width: 60px;
       height: 60px;
       left: 0;
-      top: 5px;
+      top: 0;
       background-image: url("../img/fast.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/fast_dt.svg");
+      }
     }
   }
 
@@ -104,8 +131,15 @@
       width: 60px;
       height: 60px;
       left: 0;
-      top: 5px;
+      top: 0;
       background-image: url("../img/healthy.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/healthy_dt.svg");
+      }
     }
   }
 
@@ -118,8 +152,15 @@
       width: 60px;
       height: 60px;
       left: 0;
-      top: 5px;
+      top: 0;
       background-image: url("../img/replacement.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/replacement_dt.svg");
+      }
     }
   }
 
@@ -132,8 +173,27 @@
       width: 60px;
       height: 60px;
       left: 0;
-      top: 5px;
+      top: 0;
       background-image: url("../img/change.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 40px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/change_dt.svg");
+      }
     }
+  }
+}
+
+.advantages__text {
+  line-height: 18px;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    line-height: 24px;
   }
 }

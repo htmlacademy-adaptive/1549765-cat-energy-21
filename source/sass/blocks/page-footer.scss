@@ -2,10 +2,6 @@
   background-color: $background-gray;
 }
 
-.page-footer__wrapper {
-  padding-top: 28px;
-}
-
 .page-footer__cooperation {
 
   background-color: $basic;
@@ -42,6 +38,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 61px;
   }
 }
 
