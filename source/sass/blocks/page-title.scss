@@ -8,8 +8,13 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-top: -35px;
   }
 }

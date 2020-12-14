@@ -52,14 +52,14 @@
 }
 
 .filter__title {
-  padding-left: 20px;
-  padding-right: 15px;
+  font-size: 24px;
+  line-height: 26px;
   margin-bottom: 33px;
-  max-width: 187px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 30px;
-    max-width: 512px;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: $basic;
   }
 }
 

@@ -1,14 +1,54 @@
 .title-line {
-  font-size: 24px;
-  line-height: 26px;
-  margin-top: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: $basic-green;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+}
+
+.title-line__text {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  background-color: $basic;
+  padding-right: 24px;
+  max-width: 187px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 100%;
+    background-color: $basic;
+    left: -24px;
+    top: 0;
+  }
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-    position: absolute;
-    top: -25px;
-    left: 40px;
-    background-color: $basic;
+    max-width: 550px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    padding-left: 0;
+
+    &::before {
+      display: block;
+      width: 38px;
+      left: -38px;
+    }
   }
 }

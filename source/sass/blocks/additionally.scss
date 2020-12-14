@@ -1,71 +1,58 @@
 .additionally {
-  border-top: 2px solid $basic-green;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 69px;
-    position: relative;
-  }
+  @include fieldset-none;
+  margin-bottom: 39px;
 }
 
-.additionally__list {
-  @include clear-list;
-  margin-bottom: 34px;
+.additionally__title {
+  margin-bottom: 39px;
+}
+
+.additionally__choice {
+  margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 44px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      padding-left: 30px;
+      box-sizing: border-box;
+    }
   }
 
   @media (min-width: $descktop-width) {
-    flex-wrap: nowrap;
-  }
-}
+    width: 25%;
+    margin: 0;
 
-.additionally__item {
-  @media (min-width: $tablet-width) {
-    width: 221px;
-    margin-right: 100px;
-  }
-
-  @media (min-width: $descktop-width) {
-    margin-right: 0;
-  }
-}
-
-.additionally__input:checked + .input-option__checkbox {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/check_active.svg");
-
-  &:hover {
-    background-image: url("../img/cb_active_hover.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/cb-active-dt.svg");
-
-    &:hover {
-      background-image: url("../img/cb-active-hover-dt.svg");
+    &:nth-child(2n) {
+      padding: 0;
     }
   }
 }
 
-.additionally__input:disabled + .input-option__checkbox {
-  background-image: url("../img/cb_dis.svg");
+.additionally__container {
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/cb-dis-dt.svg");
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 65px;
   }
 }
 
-.additionally__input:checked:disabled + .input-option__checkbox {
-  background-image: url("../img/cb_active_dis.svg");
-
+.additionally__wrapper {
   @media (min-width: $tablet-width) {
-    background-image: url("../img/cb-dis-active-dt.svg");
+    margin-top: 60px;
+    margin-bottom: 18px;
   }
 }
