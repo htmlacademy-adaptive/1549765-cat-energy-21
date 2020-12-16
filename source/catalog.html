@@ -10,11 +10,11 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container page-header__wrapper">
+    <div class="page-header__wrapper">
       <a class="page-header__logo logo" href="index.html">
         <img class="logo__img" src="img/header-logo.svg" width="190" height="38" alt="Логотип Кэт энерджи">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -36,7 +36,7 @@
   </header>
   <main class="page-main">
     <div class="container page-main__wrapper">
-      <h1 class="page-title">Каталог продукции</h1>
+      <h1 class="page-title page-title--catalog">Каталог продукции</h1>
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Каталог</h2>
@@ -46,8 +46,10 @@
                 <div class="product__inf">
                   <a class="product__link-img" href="">
                     <picture class="product__img">
-                      <source media="(min-width: 768px)" srcset="img/catalog-1-desktop-1tablet.png 1x, img/catalog-1-desktop1-tablet-2x.png 2x">
-                      <img class="product__img" src="img/catalog-1-desktop1.png" srcset="img/catalog-1-desktop1-2x.png 2x" alt="Cat Energy PRO 500 г">
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog-1-desktop-1tablet.png 1x, img/catalog-1-desktop1-tablet-2x.png 2x">
+                      <img class="product__img" src="img/catalog-1-desktop1.png"
+                        srcset="img/catalog-1-desktop-1-2x.png 2x" alt="Cat Energy PRO 500 г">
                     </picture>
                   </a>
                   <div class="product__content">
@@ -174,7 +176,7 @@
                     <picture>
                       <source media="(min-width: 768px)"
                         srcset="img/catalog-5-tablet.png 1x, img/catalog-5-tablet@2x.png 2x">
-                      <img class="product__img" src="img/catalog-5-desktop.png" src="img/catalog-5-desktop-2x.png"
+                      <img class="product__img" src="img/catalog-5.png" srcset="img/catalog-5-desktop-2x.png 2x"
                         alt="Cat Energy slim 500 г">
                     </picture>
                   </a>
@@ -273,9 +275,13 @@
           </ul>
         </div>
       </section>
-      <section class="other">
-        <div class="other__wrapper">
-          <h2 class="title-line other__title">Дополнительные товары</h2>
+    </div>
+    <section class="other">
+      <div class="other__wrapper">
+        <div class="title-line">
+          <legend class="container catalog__title"><span class="title-line__text title-line__text--catalog">Дополнительные товары</span></legend>
+        </div>
+        <div class="container page-main__wrapper">
           <div class="other__block">
             <div class="other__goods">
               <ul class="other__list">
@@ -342,8 +348,9 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

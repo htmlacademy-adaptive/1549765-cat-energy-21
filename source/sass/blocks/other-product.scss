@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 
   @media (min-width: $descktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -24,11 +25,32 @@
   text-transform: uppercase;
   color: $form_dark-gray;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .other-product__block {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 230px;
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .other-product__value {

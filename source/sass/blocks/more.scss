@@ -1,3 +1,16 @@
+.more {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 429px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 245px;
+  }
+}
 
 .more__title {
   font-family: $font-family;
@@ -21,5 +34,17 @@
 }
 
 .more__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 178px;
   margin-bottom: 25px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

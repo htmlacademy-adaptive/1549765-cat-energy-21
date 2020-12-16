@@ -1,7 +1,3 @@
-.other__wrapper {
-  padding-top: 28px;
-}
-
 .other__block {
   @media (min-width: $descktop-width) {
     display: flex;
@@ -10,8 +6,16 @@
 }
 
 .other__goods {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-check;
+  }
+
   @media (min-width: $descktop-width) {
     width: 896px;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -25,6 +29,7 @@
 .other__list {
   @include clear-list;
   border-top: $nav-border;
+  border-bottom: $nav-border;
 }
 
 .other__gift {
@@ -37,4 +42,15 @@
 .other__item {
   padding-top: 13px;
   border-bottom: $nav-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px;
+    padding-top: 26px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
