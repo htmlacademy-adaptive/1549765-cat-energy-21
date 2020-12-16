@@ -9,3 +9,18 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin typography_template($font-size, $line-height, $font-weight: 400) {
+  font-family: inherit;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin r-s16-h18 {
+  @include typography_template(16px, 18px);
+}
+
+@mixin r-s20-h30 {
+  @include typography_template(20px, 30px);
+}

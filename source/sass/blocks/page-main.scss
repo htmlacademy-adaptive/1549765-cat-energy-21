@@ -2,3 +2,18 @@
   padding-top: 27px;
   margin-bottom: 35px;
 }
+
+.page-main__desc {
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-top: 37px;
+  margin-bottom: 39px;
+  width: 230px;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 67px;
+  }
+}

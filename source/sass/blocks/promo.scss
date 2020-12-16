@@ -131,8 +131,6 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     order: 2;
-    width: 609px;
-    height: 609px;
     z-index: 1;
     top: 200px;
     right: 30px;
@@ -140,8 +138,6 @@
 
   @media (min-width: $descktop-width) {
     position: absolute;
-    width: 552px;
-    height: 499px;
     right: 340px;
     top: -85px;
   }

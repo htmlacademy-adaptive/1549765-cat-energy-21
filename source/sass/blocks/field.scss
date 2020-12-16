@@ -1,0 +1,65 @@
+.field {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--email {
+    .field__input {
+      padding-right: 40px;
+    }
+
+    img {
+      width: 18px;
+      height: 13px;
+      right: 15px;
+    }
+  }
+
+  &--tel {
+    .field__input {
+      padding-right: 40px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      right: 17px;
+    }
+  }
+}
+
+.field__text {
+  @include r-s16-h18;
+  text-transform: uppercase;
+  margin-right: 13px;
+  color: $special_dark-grey;
+
+  &--age {
+    min-width: 95px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include r-s20-h30;
+  }
+}
+
+.field__input {
+  @include r-s16-h18;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  border: 1px solid $border-color;
+  padding: 13px 15px;
+  flex-grow: 1;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include r-s20-h30;
+    padding: 10px 20px;
+  }
+}

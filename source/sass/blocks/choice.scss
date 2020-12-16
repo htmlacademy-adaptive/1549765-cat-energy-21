@@ -1,0 +1,93 @@
+.choice {
+  display: block;
+
+  &--radio {
+    .choice__text {
+      &::before {
+        border-radius: 50%;
+      }
+
+      &::after {
+        width: 14px;
+        border-radius: 50%;
+        background-color: $basic-green;
+        transform: translate(65%, -50%);
+
+        @media (min-width: $tablet-width) {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  &--check {
+    .choice__text {
+      &::after {
+        width: 18px;
+        background-image: url("/img/check.svg");
+        transform: translate(40%, -50%);
+
+        @media (min-width: $tablet-width) {
+          transform: translate(64%, -50%);
+        }
+      }
+    }
+  }
+}
+
+.choice__text {
+  @include r-s16-h18;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 46px;
+  display: block;
+  color: $form_dark-gray;
+
+
+  @media (min-width: $tablet-width) {
+    @include r-s20-h30;
+    padding-left: 59px;
+  }
+
+  &::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid $border-check;
+
+    @media (min-width: $tablet-width) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 14px;
+    left: 0;
+    top: 50%;
+    display: none;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $border-check-h;
+    }
+  }
+}
+
+.choice__input {
+  &:checked + .choice__text::after {
+    display: block;
+  }
+
+  &:disabled + .choice__text {
+    opacity: 0.3;
+  }
+}
