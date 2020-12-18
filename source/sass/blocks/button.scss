@@ -8,15 +8,36 @@
   border: none;
   margin: 0;
 
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: $white-hover;
+  }
+
   &--silver {
     font-size: 16px;
     line-height: 20px;
     color: $special_dark-grey;
     background-color: $background-gray;
-    padding: 20px 94px;
+    padding: 10px 94px;
 
-    @media (min-width: $descktop-width) {
-      padding: 20px 70px;
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    &:hover {
+      background-color: $silver-button-hover;
+    }
+
+    &:active {
+      color: $special_dark-grey;
+      background-color: $background-gray;
+      opacity: 0.3;
     }
   }
 }
