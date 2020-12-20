@@ -55,15 +55,14 @@
         right: 62px;
         width: 200px;
         height: 211px;
-        background-image: url("../img/cat_back_slim.svg");
+        background-size: contain;
       }
 
       @media (min-width: $descktop-width) {
-        top: 25px;
+        top: 40px;
         left: 50px;
         width: 100px;
         height: 106px;
-        background-image: url("../img/cat_back__dt.svg");
       }
     }
   }
@@ -86,15 +85,14 @@
         right: 28px;
         width: 268px;
         height: 211px;
-        background-image: url("../img/cat_back.svg");
+        background-size: contain;
       }
 
       @media (min-width: $descktop-width) {
-        top: 28px;
-        left: 35px;
+        top: 46px;
+        left: 32px;
         width: 134px;
         height: 100px;
-        background-image: url("../img/cat_mass_dt.svg");
       }
     }
   }

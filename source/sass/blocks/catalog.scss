@@ -53,6 +53,15 @@
   padding: 10px;
   display: block;
 
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: $white-hover;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 93px;
   }
@@ -87,5 +96,11 @@
     font-size: 36px;
     line-height: 36px;
     background-color: $basic;
+    padding-left: 0;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding: 0;
+    width: 1220px;
   }
 }

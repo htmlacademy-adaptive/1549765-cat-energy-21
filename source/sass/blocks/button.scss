@@ -6,16 +6,6 @@
   color: $basic;
   text-decoration: none;
   border: none;
-  margin: 0;
-
-  &:hover {
-    background-color: $dark-green;
-  }
-
-  &:active {
-    background-color: $dark-green;
-    color: $white-hover;
-  }
 
   &--silver {
     font-size: 16px;

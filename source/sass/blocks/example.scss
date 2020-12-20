@@ -19,7 +19,7 @@
     justify-content: space-between;
     padding-top: 70px;
     position: relative;
-    padding-bottom: 68px;
+    padding-bottom: 71px;
 
     &::before {
       content: "";
@@ -76,7 +76,8 @@
   }
 
   @media (min-width: $descktop-width) {
-    margin-bottom: 78px;
+    margin-bottom: 75px;
+    padding-top: 22px;
   }
 }
 
@@ -227,7 +228,7 @@
   }
 
   @media (min-width: $descktop-width) {
-    width: 690px;
+    width: auto;
   }
 }
 
@@ -236,15 +237,15 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    height: 620px;
+    height: 500px;
   }
 
   @media (min-width: $descktop-width) {
-    height: 536px;
+    height: 520px;
     width: auto;
     position: absolute;
     top: -265px;
-    left: -70px;
+    left: -80px;
     z-index: 2;
     margin-bottom: 0;
   }
@@ -305,14 +306,14 @@
 .example__range-controls {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 620px;
+    top: 508px;
     left: 40px;
     text-align: center;
     justify-content: center;
   }
 
   @media (min-width: $descktop-width) {
-    top: 288px;
-    left: 10px;
+    top: 292px;
+    left: -5px;
   }
 }

@@ -17,6 +17,11 @@
     background-color: #64a73c;
     z-index: 1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/green-cat2x.jpg");
+      background-size: contain;
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -54,6 +59,7 @@
   @media (min-width: $descktop-width) {
     margin-bottom: 0;
     position: relative;
+    height: auto;
   }
 }
 

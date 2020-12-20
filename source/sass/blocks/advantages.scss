@@ -139,7 +139,7 @@
     position: relative;
 
     &::before {
-      background-image: url("../img/replacement.svg");
+      background-image: url("../img/change.svg");
     }
   }
 
@@ -147,7 +147,7 @@
     position: relative;
 
     &::before {
-      background-image: url("../img/change.svg");
+      background-image: url("../img/replacement.svg");
     }
   }
 }
