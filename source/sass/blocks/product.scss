@@ -1,18 +1,21 @@
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 280px;
-  min-height: 190px;
-  margin-bottom: 14px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
-    min-height: 511px;
+    width: 252px;
+    padding: 0 36px;
+    padding-bottom: 40px;
+    padding-top: 161px;
+    justify-content: flex-start;
+    align-items: center;
+    background: $background-gray;
   }
 
   @media (min-width: $descktop-width) {
-    width: 245px;
+    width: 168px;
+    padding-left: 39px;
+    padding-right: 38px;
   }
 }
 
@@ -22,8 +25,14 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: auto;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 168px;
   }
 }
 
@@ -34,21 +43,53 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
-  margin-bottom: 18px;
+  display: flex;
+  margin-bottom: 15px;
+  max-width: 76px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 145px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 .product__property-item {
   display: flex;
+  justify-content: space-between;
   font-family: $font-standart;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
-  margin-bottom: 6px;
+  min-width: 142px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $border-check;
+  }
 }
 
 .product__block {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 20px;
+    margin-bottom: 33px;
+    width: 252px;
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 168px;
+  }
 }
 
 .product__property-value {
@@ -56,5 +97,33 @@
 }
 
 .product__content {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.product__ing {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.product__link-img {
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -205px;
+  }
+
+  @media (min-width: $descktop-width) {
+    bottom: 235px;
+  }
 }

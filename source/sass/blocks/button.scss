@@ -1,18 +1,33 @@
 .button {
   font-family: inherit;
   background-color: $basic-green;
-  font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
   text-transform: uppercase;
   color: $basic;
   text-decoration: none;
   border: none;
-  margin: 0;
-  padding: 7px 0;
 
   &--silver {
+    font-size: 16px;
+    line-height: 20px;
     color: $special_dark-grey;
     background-color: $background-gray;
+    padding: 10px 94px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    &:hover {
+      background-color: $silver-button-hover;
+    }
+
+    &:active {
+      color: $special_dark-grey;
+      background-color: $background-gray;
+      opacity: 0.3;
+    }
   }
 }

@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
     width: 171px;
   }
 
@@ -58,10 +58,12 @@
     background-color: $basic;
     top: 50%;
     left: 50%;
-    transform: translate(-600px, -50%);
-    max-width: 570px;
+    transform: translate(-610px, -52%);
+    max-width: 410px;
     height: 201px;
-    padding: 0 80px;
+    padding-left: 75px;
+    padding-right: 89px;
+    padding-top: 0;
     margin: 0;
   }
 }

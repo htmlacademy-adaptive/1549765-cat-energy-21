@@ -7,14 +7,26 @@
   margin-bottom: 37px;
   padding-top: 27px;
 
+  &--catalog {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
     margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
+
+    &--catalog {
+      margin-bottom: 130px;
+      margin-top: -35px;
+    }
   }
 
   @media (min-width: $descktop-width) {
-    margin-top: -35px;
+    &--catalog {
+      margin-top: -45px;
+    }
   }
 }

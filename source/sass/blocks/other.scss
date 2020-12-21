@@ -1,17 +1,28 @@
-.other__wrapper {
-  padding-top: 28px;
-}
 
-.other__block {
+.other {
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+  }
+
   @media (min-width: $descktop-width) {
-    display: flex;
-    justify-content: space-between;
+    margin-top: -45px;
+    margin-bottom: 85px;
   }
 }
 
-.other__goods {
+.other__block {
+  padding-top: 33px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    margin-bottom: 75px;
+  }
+
   @media (min-width: $descktop-width) {
-    width: 896px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
@@ -25,6 +36,22 @@
 .other__list {
   @include clear-list;
   border-top: $nav-border;
+  border-bottom: $nav-border;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-check;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 896px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: $nav-border;
+    margin-bottom: 0;
+  }
 }
 
 .other__gift {
@@ -32,9 +59,36 @@
   background-repeat: no-repeat;
   padding-top: 186px;
   padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/gift-back-tb.jpg");
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $descktop-width) {
+    background-image: url("../img/gift-dt.jpg");
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 245px;
+  }
 }
 
 .other__item {
-  padding-top: 13px;
+  padding-top: 12px;
   border-bottom: $nav-border;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

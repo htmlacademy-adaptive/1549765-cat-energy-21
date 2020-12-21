@@ -20,7 +20,15 @@
   display: inline-block;
   background-color: $basic;
   padding-right: 24px;
-  max-width: 187px;
+  width: 187px;
+
+  &--catalog {
+    min-width: 226px;
+
+    @media (min-width: $tablet-width) {
+      width: 338px;
+    }
+  }
 
   &::before {
     position: absolute;
@@ -33,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 550px;
+    width: auto;
     padding-right: 38px;
     padding-left: 38px;
 
