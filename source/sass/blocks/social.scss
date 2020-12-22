@@ -51,8 +51,10 @@
     }
 
     &--facebook {
-      width: 28px;
-      height: 33px;
+      svg {
+        width: 28px;
+        height: 33px;
+      }
     }
   }
 }
