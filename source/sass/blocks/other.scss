@@ -60,10 +60,20 @@
   padding-top: 186px;
   padding-bottom: 43px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-back-2x.jpg");
+    background-size: contain;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-back-tb.jpg");
     padding-top: 71px;
     padding-bottom: 69px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-back-tb-2x.jpg");
+      background-size: contain;
+    }
   }
 
   @media (min-width: $descktop-width) {
@@ -71,6 +81,11 @@
     padding-top: 0;
     padding-bottom: 0;
     width: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-dt-2x.jpg");
+      background-size: contain;
+    }
   }
 }
 
