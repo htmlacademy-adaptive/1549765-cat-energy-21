@@ -50,3 +50,31 @@
     opacity: 0.6;
   }
 }
+
+.page-header__logo-img {
+  &--mob {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tab {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $descktop-width) {
+      display: none;
+    }
+  }
+
+  &--dt {
+    display: none;
+
+    @media (min-width: $descktop-width) {
+      display: block;
+    }
+  }
+}

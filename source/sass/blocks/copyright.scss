@@ -14,4 +14,20 @@
     padding: 0;
     min-width: 163px;
   }
+
+  &--img {
+    color: $social-gray;
+
+    &:hover {
+      color: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &--img {
+      color: $basic-green;
+    }
+  }
 }
