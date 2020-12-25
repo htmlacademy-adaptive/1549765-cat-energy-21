@@ -3,7 +3,7 @@
   align-items: center;
   position: relative;
 
-  img {
+  svg {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -14,10 +14,14 @@
       padding-right: 40px;
     }
 
-    img {
+    svg {
       width: 18px;
       height: 13px;
       right: 15px;
+    }
+
+    &:disabled {
+      color: $basic-green;
     }
   }
 
@@ -26,7 +30,7 @@
       padding-right: 40px;
     }
 
-    img {
+    svg {
       width: 20px;
       height: 20px;
       right: 17px;
@@ -61,5 +65,21 @@
   @media (min-width: $tablet-width) {
     @include r-s20-h30;
     padding: 10px 20px;
+  }
+
+  &--error {
+    border: 2px solid $error-color;
+
+    & ~ svg {
+      color: $error-color;
+    }
+  }
+
+  &:disabled {
+    border: 2px solid $basic-black;
+
+    & ~ svg {
+      color: $basic-green;
+    }
   }
 }
