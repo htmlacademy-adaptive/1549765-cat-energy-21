@@ -9,7 +9,9 @@
 
 .page-footer__logo {
   display: block;
-  margin: 32px auto;
+  margin: 0 auto;
+  margin-top: 39px;
+  margin-bottom: 27px;
   width: 128px;
 
   @media (min-width: $tablet-width) {
