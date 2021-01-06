@@ -128,6 +128,14 @@
     margin-right: 35px;
     width: auto;
 
+    &--active-colorbg {
+      border-bottom: 2px solid $basic;
+
+      @media (min-width: $descktop-width) {
+        border-bottom: 2px solid $basic;
+      }
+    }
+
     &--active {
       border-bottom: 2px solid #68b738;
 
@@ -141,6 +149,16 @@
     @media (min-width: $tablet-width) {
       margin-right: 0;
     }
+  }
+}
+
+.main-nav__item--active-colorbg {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic;
+  }
+
+  @media (min-width: $descktop-width) {
+    border-bottom: 2px solid $basic;
   }
 }
 
