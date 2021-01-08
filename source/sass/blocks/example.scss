@@ -250,6 +250,10 @@
     z-index: 2;
     margin-bottom: 0;
   }
+
+  &--skinny {
+    display: none;
+  }
 }
 
 .example__scale {

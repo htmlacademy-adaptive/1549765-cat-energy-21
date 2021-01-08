@@ -10,6 +10,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 const del = require('del');
 const sync = require("browser-sync").create();
 
@@ -40,6 +41,17 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
 
 // Images
 

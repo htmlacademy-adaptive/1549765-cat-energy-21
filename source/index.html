@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -130,14 +131,15 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp 1x, img/cat-fat2x.webp 2x">
                 <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/before-mobile-2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat2x.png 2x">
-              <img src="img/cat-before-mobile.png" srcset="img/before-mobile-2x.png 2x" class="example__picture" width="311" height="232" alt="Пример похудения кота">
+              <img src="img/cat-before-mobile.png" srcset="img/before-mobile-2x.png 2x" class="example__picture example__picture--fat" width="311" height="232" alt="Пример похудения кота">
             </picture>
+              <img src="img/cat-skinny.png" class="example__picture example__picture--skinny" width="311" height="232" alt="Пример похудения кота">
               <div class="example__range-controls slider">
-                <button class="slider__toggle" type="button">Было</button>
+                <button class="slider__toggle slider__toggle--before" type="button">Было</button>
                 <div class="example__scale">
                   <div class="example__bar"></div>
                 </div>
-                <button class="slider__toggle" type="button">Стало</button>
+                <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
               </div>
             </div>
           </div>
@@ -208,6 +210,20 @@
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
