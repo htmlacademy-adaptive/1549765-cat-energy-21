@@ -11,7 +11,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
-const del = require('del');
+const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -95,6 +95,8 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
+    "source/js/*.js",
+    "source/css/*.css"
   ], {
     base: "source"
   })
@@ -151,6 +153,7 @@ gulp.series(
     styles,
     html,
     sprite,
+    scripts,
     copy,
     images,
     createWebp
@@ -167,6 +170,7 @@ exports.default = gulp.series(
     styles,
     html,
     sprite,
+    scripts,
     copy,
     createWebp
   ),

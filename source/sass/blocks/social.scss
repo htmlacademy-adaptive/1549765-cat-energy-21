@@ -36,6 +36,10 @@
     opacity: 0.3;
   }
 
+  &--facebook {
+    fill: none;
+  }
+
   @media (min-width: $tablet-width) {
     &--vkontakte {
       svg {
@@ -55,7 +59,6 @@
       svg {
         width: 28px;
         height: 33px;
-        fill: none;
       }
     }
   }
