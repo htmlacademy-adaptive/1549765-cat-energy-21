@@ -54,12 +54,14 @@
     padding-top: 0;
     height: 810px;
     margin-bottom: 0;
+    width: 626px;
   }
 
   @media (min-width: $descktop-width) {
     margin-bottom: 0;
     position: relative;
     height: auto;
+    width: auto;
   }
 }
 

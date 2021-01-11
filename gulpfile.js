@@ -10,7 +10,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
-const del = require('del');
+const uglify = require("gulp-uglify");
+const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -40,6 +41,17 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
 
 // Images
 
@@ -83,6 +95,8 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
+    "source/js/*.js",
+    "source/css/*.css"
   ], {
     base: "source"
   })
@@ -139,6 +153,7 @@ gulp.series(
     styles,
     html,
     sprite,
+    scripts,
     copy,
     images,
     createWebp
@@ -155,6 +170,7 @@ exports.default = gulp.series(
     styles,
     html,
     sprite,
+    scripts,
     copy,
     createWebp
   ),

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -130,7 +131,7 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp 1x, img/cat-fat2x.webp 2x">
                 <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/before-mobile-2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat2x.png 2x">
-              <img src="img/cat-before-mobile.png" srcset="img/before-mobile-2x.png 2x" class="example__picture" width="311" height="232" alt="Пример похудения кота">
+              <img src="img/cat-before-mobile.png" srcset="img/before-mobile-2x.png 2x" class="example__picture example__picture--fat" width="311" height="232" alt="Пример похудения кота">
             </picture>
               <div class="example__range-controls slider">
                 <button class="slider__toggle" type="button">Было</button>
@@ -208,6 +209,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
