@@ -16,7 +16,7 @@
 .catalog__item {
   border-bottom: $nav-border;
   margin-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   &:nth-child(odd) {
     @media (min-width: $tablet-width) {
@@ -37,6 +37,7 @@
 
   @media (min-width: $descktop-width) {
     margin-right: 80px;
+    margin-bottom: 125px;
   }
 
   &:nth-child(4n) {
@@ -75,7 +76,7 @@
     width: 100%;
 
     @media (min-width: $tablet-width) {
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     @media (min-width: $descktop-width) {

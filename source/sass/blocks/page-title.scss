@@ -20,13 +20,16 @@
 
     &--catalog {
       margin-bottom: 130px;
-      margin-top: -35px;
     }
   }
 
   @media (min-width: $descktop-width) {
     &--catalog {
-      margin-top: -45px;
+      margin-top: -36px;
+    }
+
+    &--form {
+      margin-top: -35px;
     }
   }
 }

@@ -1,6 +1,10 @@
 .additionally {
   @include fieldset-none;
-  margin-bottom: 43px;
+  margin-bottom: 39px;
+
+  @media (min-width: $descktop-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .additionally__title {
@@ -8,7 +12,7 @@
 }
 
 .additionally__choice {
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 
   &:last-child {
     margin-bottom: 0;
