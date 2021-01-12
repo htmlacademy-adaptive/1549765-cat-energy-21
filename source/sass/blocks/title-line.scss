@@ -20,7 +20,7 @@
   display: inline-block;
   background-color: $basic;
   padding-right: 24px;
-  width: 187px;
+  max-width: 181px;
 
   &--catalog {
     min-width: 226px;
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    max-width: 512px;
     padding-right: 38px;
     padding-left: 38px;
 
