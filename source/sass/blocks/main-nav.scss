@@ -6,12 +6,13 @@
   color: $basic-black;
   background-color: $basic;
   width: auto;
+  position: relative;
 
   &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: -30px;
+    top: 0;
+    left: 0;
     width: 24px;
     height: 3px;
     background-color: #000000;
@@ -32,16 +33,12 @@
   }
 
   &--opened .main-nav__toggle {
-    top: 0;
-    right: auto;
-    left: 0;
-
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 31px;
-      left: 276px;
+      top: 6px;
+      left: 0;
       width: 24px;
       height: 2px;
       background-color: #000000;
@@ -135,7 +132,7 @@
     width: auto;
 
     &--active-colorbg {
-      border-bottom: 2px solid $basic;
+      border-bottom: 2px solid $basic-green;
 
       @media (min-width: $descktop-width) {
         border-bottom: 2px solid $basic;
@@ -143,10 +140,10 @@
     }
 
     &--active {
-      border-bottom: 2px solid #68b738;
+      border-bottom: 2px solid $basic-green;
 
       @media (min-width: $descktop-width) {
-        border-bottom: 2px solid #68b738;
+        border-bottom: 2px solid $basic-green;
       }
     }
   }
@@ -170,8 +167,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -40px;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 18px;

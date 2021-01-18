@@ -52,6 +52,10 @@
   @media (min-width: $tablet-width) {
     @include r-s20-h30;
   }
+
+  @media (min-width: $descktop-width) {
+    margin-right: 23px;
+  }
 }
 
 .field__input {
@@ -63,16 +67,20 @@
   flex-grow: 1;
   margin: 0;
 
+  &:focus {
+    border-color: $basic-black;
+  }
+
   @media (min-width: $tablet-width) {
     @include r-s20-h30;
     padding: 10px 20px;
   }
 
-  &--error {
+  &:required:invalid {
     border: 2px solid $error-color;
 
     & ~ svg {
-      color: $error-color;
+      stroke: $error-color;
     }
   }
 

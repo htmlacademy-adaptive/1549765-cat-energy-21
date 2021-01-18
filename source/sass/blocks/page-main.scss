@@ -42,3 +42,32 @@
     margin-bottom: 67px;
   }
 }
+
+.page-main__container {
+  @media (min-width: $descktop-width) {
+    padding: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.page-main__wrap {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding-left: 66px;
+    padding-right: 67px;
+    width: 630px;
+
+    .container {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}

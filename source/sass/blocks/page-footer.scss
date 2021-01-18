@@ -41,7 +41,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 54px;
+    padding-top: 59px;
     padding-bottom: 61px;
   }
 }
@@ -51,3 +51,18 @@
     display: flex;
   }
 }
+
+.page-footer__map {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 1440px;
+  }
+}
+
