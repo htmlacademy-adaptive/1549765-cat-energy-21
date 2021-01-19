@@ -76,7 +76,7 @@
     padding: 10px 20px;
   }
 
-  &:required:invalid {
+  &--error {
     border: 2px solid $error-color;
 
     & ~ svg {

@@ -126,9 +126,7 @@
 }
 
 .form__wrapper {
-  .container {
-    @media (min-width: $descktop-width) {
-      padding: 0;
-    }
+  @media (min-width: $descktop-width) {
+    padding: 0;
   }
 }
