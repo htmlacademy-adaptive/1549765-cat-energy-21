@@ -15,7 +15,7 @@ var formToggle = document.querySelector(".form__button");
 var formInput = document.querySelectorAll(".field__input")
 
 formToggle.addEventListener("click", function(Event) {
-var error
+  var error
 
   formInput.forEach(function(item, i, formInput)  {
     item.classList.remove("field__input--error");
@@ -26,6 +26,6 @@ var error
   })
 
   if (error == true) {
-        Event.preventDefault(".form__button");
-    }
- });
+    Event.preventDefault(".form__button");
+  }
+});
