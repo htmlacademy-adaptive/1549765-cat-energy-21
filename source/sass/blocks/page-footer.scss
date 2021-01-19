@@ -41,7 +41,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 54px;
+    padding-top: 59px;
     padding-bottom: 61px;
   }
 }
@@ -49,5 +49,34 @@
 .page-footer__social {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+}
+
+.page-footer__map {
+  display: block;
+  margin: 0 auto;
+  background-image: url("/img/location.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/location-dt-2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+    background-image: url("/img/location-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/location-tablet-2x.png");
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 1440px;
+    background-image: url("/img/location-dt.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/location-dt-2x.png");
+    }
   }
 }

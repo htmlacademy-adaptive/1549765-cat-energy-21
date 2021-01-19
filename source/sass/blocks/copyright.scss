@@ -15,7 +15,7 @@
     min-width: 163px;
   }
 
-  &--img {
+  &__link-img {
     color: $social-gray;
 
     &:hover {
@@ -26,7 +26,7 @@
   &:active {
     opacity: 0.3;
 
-    &--img {
+    &__link-img {
       color: $basic-green;
     }
   }

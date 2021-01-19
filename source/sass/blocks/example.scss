@@ -29,7 +29,7 @@
       height: 100%;
       width: 750px;
       z-index: 1;
-      background: linear-gradient(to right, #f2f2f2 48%, #eaeaea 0%);
+      background: linear-gradient(to right, #f2f2f2 47%, #eaeaea 0%);
     }
   }
 }
@@ -268,9 +268,13 @@
   @media (min-width: $tablet-width) {
     width: 428px;
     height: 6px;
-    margin: 0 17px;
+    margin-left: 32px;
     background-color: #cdcdcd;
     border: none;
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -313,8 +317,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 508px;
-    left: 40px;
+    top: 505px;
+    left: 30px;
     text-align: center;
     justify-content: center;
   }

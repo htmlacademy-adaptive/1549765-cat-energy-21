@@ -121,9 +121,17 @@
     left: 50%;
     transform: translate(-50%);
     top: -205px;
+
+    &--big {
+      top: -234px;
+    }
   }
 
   @media (min-width: $descktop-width) {
     bottom: 235px;
+
+    &--big {
+      bottom: 260px;
+    }
   }
 }

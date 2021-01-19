@@ -4,11 +4,22 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $descktop-width) {
     margin-bottom: 18px;
+    margin-top: 20px;
+  }
+}
+
+.comment__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding: 0;
   }
 }
 
