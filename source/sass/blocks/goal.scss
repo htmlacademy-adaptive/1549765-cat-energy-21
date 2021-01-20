@@ -2,22 +2,24 @@
   @include fieldset-none;
   border-top: $program-border;
   border-bottom: $program-border;
-  padding-top: 28px;
-  padding-bottom: 21px;
+  padding: 28px 20px 24px;
 
   @media (min-width: $tablet-width) {
     border: $program-border;
-    padding: 30px 28px;
+    margin: 0 auto;
     margin-bottom: 76px;
+    padding: 29px;
+    width: 568px;
   }
 
   @media (min-width: $descktop-width) {
     margin-bottom: 0;
+    padding: 30px 28px;
   }
 }
 
 .goal__choice {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;

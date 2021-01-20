@@ -1,6 +1,6 @@
 .page-main__wrapper {
   padding-top: 27px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   &--none {
     width: 100%;
@@ -40,5 +40,34 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 67px;
+  }
+}
+
+.page-main__container {
+  @media (min-width: $descktop-width) {
+    padding: 0 110px;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.page-main__wrap {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding-left: 66px;
+    padding-right: 67px;
+    width: 630px;
+
+    .container {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
 }

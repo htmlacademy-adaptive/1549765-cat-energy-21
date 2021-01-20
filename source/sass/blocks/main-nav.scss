@@ -6,12 +6,13 @@
   color: $basic-black;
   background-color: $basic;
   width: auto;
+  position: relative;
 
   &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: -30px;
+    top: 0;
+    left: 0;
     width: 24px;
     height: 3px;
     background-color: #000000;
@@ -25,19 +26,21 @@
       0 16px 0 0 fade(#000000, 30%);
   }
 
-  &--opened .main-nav__toggle {
-    top: 0;
-    right: auto;
-    left: 0;
+  &--closed .main-nav__list {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
 
+  &--opened .main-nav__toggle {
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 30px;
-      left: 270px;
+      top: 6px;
+      left: -6px;
       width: 24px;
-      height: 3px;
+      height: 2px;
       background-color: #000000;
     }
 
@@ -56,11 +59,14 @@
     }
   }
 
-
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
     background: none;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -93,6 +99,7 @@
 
     @media (min-width: $tablet-width) {
       margin: 12px auto;
+      margin-top: 18px;
     }
 
     @media (min-width: $descktop-width) {
@@ -128,11 +135,19 @@
     margin-right: 35px;
     width: auto;
 
-    &--active {
-      border-bottom: 2px solid #68b738;
+    &--active-colorbg {
+      border-bottom: 2px solid $basic-green;
 
       @media (min-width: $descktop-width) {
-        border-bottom: 2px solid #68b738;
+        border-bottom: 2px solid $basic-green;
+      }
+    }
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+
+      @media (min-width: $descktop-width) {
+        border-bottom: 2px solid $basic-green;
       }
     }
   }
@@ -144,10 +159,20 @@
   }
 }
 
+.main-nav__item--active-colorbg {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
+  }
+
+  @media (min-width: $descktop-width) {
+    border-bottom: 2px solid $basic;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -40px;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 18px;

@@ -9,7 +9,9 @@
 
 .page-footer__logo {
   display: block;
-  margin: 32px auto;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 27px;
   width: 128px;
 
   @media (min-width: $tablet-width) {
@@ -38,13 +40,45 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 55px;
-    padding-bottom: 61px;
+    align-items: center;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 }
 
 .page-footer__social {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+}
+
+.page-footer__map {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  width: 100%;
+  background-image: url("/img/location.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/location-dt-2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+    background-image: url("/img/location-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/location-tablet-2x.png");
+    }
+  }
+
+  @media (min-width: $descktop-width) {
+    width: 1440px;
+    background-image: url("/img/location-dt.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/location-dt-2x.png");
+    }
   }
 }

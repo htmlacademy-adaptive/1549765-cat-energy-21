@@ -11,6 +11,10 @@
     top: 50%;
     transform: translate(0, -50%);
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 68%;
+    }
   }
 }
 
@@ -20,13 +24,15 @@
   display: inline-block;
   background-color: $basic;
   padding-right: 24px;
-  width: 187px;
+  max-width: 181px;
 
   &--catalog {
     min-width: 226px;
 
     @media (min-width: $tablet-width) {
       width: 338px;
+      padding-right: 36px;
+      padding-left: 52px;
     }
   }
 
@@ -41,7 +47,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    max-width: 512px;
     padding-right: 38px;
     padding-left: 38px;
 

@@ -12,12 +12,13 @@
   @include clear-list;
   border-bottom: $program-border;
   border-top: $program-border;
-  padding: 20px 73px;
+  padding: 18px 53px;
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
-    min-width: 129px;
+    min-width: 160px;
+    padding-left: 24px;
   }
 }
 
@@ -34,6 +35,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--facebook {
+    fill: none;
   }
 
   @media (min-width: $tablet-width) {

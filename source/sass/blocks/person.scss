@@ -11,11 +11,21 @@
   }
 }
 
+.person__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $descktop-width) {
+    padding: 0;
+  }
+}
+
 .person__field {
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   &:last-child {
