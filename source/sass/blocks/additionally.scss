@@ -1,6 +1,6 @@
 .additionally {
   @include fieldset-none;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
 
   @media (min-width: $descktop-width) {
     margin-bottom: 44px;
@@ -20,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
 
     &:nth-last-child(2) {
       margin-bottom: 0;
@@ -68,7 +68,7 @@
 
 .additionally__wrapper {
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
+    margin-top: 62px;
     margin-bottom: 18px;
   }
 

@@ -19,6 +19,7 @@
       height: 13px;
       right: 15px;
       fill: none;
+      stroke: none;
     }
 
     &:disabled {
@@ -34,7 +35,7 @@
     svg {
       width: 20px;
       height: 20px;
-      right: 17px;
+      right: 13px;
     }
   }
 }
@@ -42,7 +43,7 @@
 .field__text {
   @include r-s16-h18;
   text-transform: uppercase;
-  margin-right: 13px;
+  margin-right: 11px;
   color: $special_dark-grey;
 
   &--age {
@@ -51,6 +52,7 @@
 
   @media (min-width: $tablet-width) {
     @include r-s20-h30;
+    margin-right: 18px;
   }
 
   @media (min-width: $descktop-width) {
@@ -68,7 +70,11 @@
   margin: 0;
 
   &:focus {
-    border-color: $basic-black;
+    border: 2px solid $basic-black;
+
+    & ~ svg {
+      stroke: $basic-green;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -76,19 +82,15 @@
     padding: 10px 20px;
   }
 
+  @media (min-width: $descktop-width) {
+    padding: 10px 16px;
+  }
+
   &--error {
     border: 2px solid $error-color;
 
     & ~ svg {
       stroke: $error-color;
-    }
-  }
-
-  &:disabled {
-    border: 2px solid $basic-black;
-
-    & ~ svg {
-      color: $basic-green;
     }
   }
 }

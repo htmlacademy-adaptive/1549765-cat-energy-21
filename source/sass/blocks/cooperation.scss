@@ -7,7 +7,7 @@
   font-family: $font-family;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 18px;
   text-transform: uppercase;
   margin: 0;
   width: 140px;
@@ -35,11 +35,6 @@
     font-size: 16px;
     line-height: 20px;
     max-width: 155px;
-    text-align: end;
-  }
-
-  @media (min-width: $descktop-width) {
-    text-align: start;
   }
 }
 
@@ -51,9 +46,9 @@
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 70px 0 70px;
+    padding: 0 71px;
+    padding-top: 66px;
     margin-bottom: 55px;
-    width: 628px;
   }
 
   @media (min-width: $descktop-width) {

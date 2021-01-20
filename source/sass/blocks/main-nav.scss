@@ -38,7 +38,7 @@
       content: "";
       position: absolute;
       top: 6px;
-      left: 0;
+      left: -6px;
       width: 24px;
       height: 2px;
       background-color: #000000;
@@ -63,6 +63,10 @@
     font-weight: 400;
     font-size: 18px;
     background: none;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -135,7 +139,7 @@
       border-bottom: 2px solid $basic-green;
 
       @media (min-width: $descktop-width) {
-        border-bottom: 2px solid $basic;
+        border-bottom: 2px solid $basic-green;
       }
     }
 
@@ -157,7 +161,7 @@
 
 .main-nav__item--active-colorbg {
   @media (min-width: $tablet-width) {
-    border-bottom: 2px solid $basic;
+    border-bottom: 2px solid $basic-green;
   }
 
   @media (min-width: $descktop-width) {

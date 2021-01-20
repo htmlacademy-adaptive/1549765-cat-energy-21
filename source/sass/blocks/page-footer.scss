@@ -10,7 +10,7 @@
 .page-footer__logo {
   display: block;
   margin: 0 auto;
-  margin-top: 39px;
+  margin-top: 38px;
   margin-bottom: 27px;
   width: 128px;
 
@@ -41,8 +41,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 59px;
-    padding-bottom: 61px;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 }
 
@@ -55,6 +55,8 @@
 .page-footer__map {
   display: block;
   margin: 0 auto;
+  border: none;
+  width: 100%;
   background-image: url("/img/location.png");
 
   @media (min-resolution: 2dppx) {

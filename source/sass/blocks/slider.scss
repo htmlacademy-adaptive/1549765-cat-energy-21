@@ -3,10 +3,6 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-
-  @media (min-width: $tablet-width) {
-    width: 576px;
-  }
 }
 
 .slider__toggle {
@@ -16,16 +12,10 @@
   text-transform: uppercase;
   border: none;
   background-color: transparent;
-  margin-left: 10px;
-  margin-right: -11px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $special_dark-grey;
-  }
-
-  @media (min-width: $descktop-width) {
-    margin-right: 5px;
   }
 }
