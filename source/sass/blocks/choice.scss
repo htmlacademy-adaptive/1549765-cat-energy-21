@@ -1,5 +1,14 @@
 .choice {
   display: block;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $descktop-width) {
+    margin-bottom: 23px;
+  }
 
   &--radio {
     .choice__text {
@@ -89,5 +98,9 @@
 
   &:disabled + .choice__text {
     opacity: 0.3;
+  }
+
+  &:focus + .choice__text {
+    color: $basic-green;
   }
 }

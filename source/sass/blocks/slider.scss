@@ -18,4 +18,13 @@
     line-height: 30px;
     border-bottom: 1px dotted $special_dark-grey;
   }
+
+  &:hover {
+    border-bottom: 1px solid $special_dark-grey;
+  }
+
+  &:active {
+    border: none;
+    color: $basic-black;
+  }
 }
